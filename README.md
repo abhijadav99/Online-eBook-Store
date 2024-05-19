@@ -23,3 +23,4 @@ Steps to Run project
 2. Once it is install successfully then you will find htdocs folder in C drive inside XAMPP folder.
 3. Copy all folders and files inside htdocs.
 4. Create Databse table according to query in API files.
+5. For database setup find Database.txt file in Datbase folder.
