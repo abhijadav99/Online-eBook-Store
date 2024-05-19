@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin </title>
+    <!--Common CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <!--Page Specific CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container_login">
+
+        <div class="container_info">
+            <p class="title_primary margin_top">Admin Login</p>
+        </div>
+        <div class="abc">
+            <div class="container_credentials card padding_2">
+                <form>
+                    <h4 class="title_secondary">Admin Login</h4>
+                    <div class="container_edittext margin_top">
+                        <i class="icon_edittext fas fa-envelope"></i>
+                        <input class="edittext" type="email" id="EMAIL" maxlength="32" placeholder="Email" required />
+                        <p id="VALIDATION_EMAIL" class="error"></p>
+                    </div>
+                    <div id="COUNTER_EMAIL" class="character_counter">0 / 32 characters</div>
+                    <div class="container_edittext margin_top">
+                        <i class="icon_edittext fas fa-lock"></i>
+                        <input class="edittext" type="password" id="PASSWORD" maxlength="16" placeholder="Password"
+                            required />
+                        <p id="VALIDATION_PASSWORD" class="error"></p>
+                    </div>
+                    <div id="COUNTER_PASSWORD" class="character_counter">0 / 8 characters</div>
+                    <div class="divider margin_top"></div>
+                    <button id="BTN_LOGIN" class="btn_pink margin_top" type="submit">Login</button>
+
+                    <p id="ERROR" class="error margin_top"></p>
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/admin.js"></script>
+
+</body>

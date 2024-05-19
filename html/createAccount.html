@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Account</title>
+    <!--Common CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <!--Page Specific CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/createAccount.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container_login">
+
+        <div class="container_info">
+            <img class="logo_book" src="../images/logoCrop.png" alt="Online_eBook_Store" />
+            <p class="title_primary margin_top">Create Account !</p>
+            <p class="title_secondary margin_top">Let's Start Digital...</p>
+        </div>
+
+        <div class="container_credentials card padding_2">
+            <form>
+                <h4 class="title_secondary">Create Account</h4>
+                <div class="container_edittext margin_top">
+                    <i class="icon_edittext fas fa-user"></i>
+                    <input class="edittext" type="text" id="USERNAME" maxlength="22" placeholder="Full Name" required />
+                    <p id="VALIDATION_USERNAME" class="error"></p>
+                </div>
+                <div id="COUNTER_USERNAME" class="character_counter">0 / 3 characters</div>
+                <div class="container_edittext margin_top">
+                    <i class="icon_edittext fas fa-envelope"></i>
+                    <input class="edittext" type="email" id="EMAIL" maxlength="32" placeholder="Email" required />
+                    <p id="VALIDATION_EMAIL" class="error"></p>
+                </div>
+                <div id="COUNTER_EMAIL" class="character_counter">0 / 32 characters</div>
+                <div class="container_edittext margin_top">
+                    <i class="icon_edittext fas fa-lock"></i>
+                    <input class="edittext" type="password" id="PASSWORD" maxlength="16" placeholder="Password"
+                        required />
+                    <p id="VALIDATION_PASSWORD" class="error"></p>
+                </div>
+                <div id="COUNTER_PASSWORD" class="character_counter">0 / 16 characters</div>
+
+                <p id="ERROR" class="error margin_top"></p>
+                <div class="divider margin_top"></div>
+                <div>
+                    <button id="BTN_CREATE_ACCOUNT" class="btn_create_account margin_top">Create Account</button>
+                </div>
+                <div style="padding: 6px; text-align: start; display: flex;">
+                    <p style="padding-right: 5px;">Already have an account ?</p>
+                    <button id="BTN_BACK_LOGIN" class="btn_back_to_login margin_top">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/createAccount.js"></script>
+
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/userManagement.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container_login">
+
+    <div class="container_info">
+        <p class="title_primary">User Management</p>
+    </div>
+    <div class="abc">
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-user"></i>
+            <input class="edittext1" type="text" id="USERNAME" maxlength="32" placeholder="Full Name" required />
+            <p id="VALIDATION_USERNAME" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-envelope"></i>
+            <input class="edittext1" type="email" id="EMAIL" maxlength="32" placeholder="Email" required />
+            <p id="VALIDATION_EMAIL" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-lock"></i>
+            <input class="edittext1" type="password" id="PASSWORD" maxlength="16" placeholder="Password"
+                required />
+            <p id="VALIDATION_PASSWORD" class="error"></p>
+        </div>
+        <button id="BTN_ADD_USER" class="btn_pink margin_top" type="submit">Add New User</button>
+    </div>
+
+    <p class="title_secondary">Total Users List</p>
+    <div id="userList"></div>
+    <div id="editForm" style="display: none;">
+      <div class="abc">
+        <input type="hidden" id="editId">
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-user"></i>
+          <input class="edittext1" type="text" id="editUsername" placeholder="Username">
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-envelope"></i>
+          <input class="edittext1" type="email" id="editEmail" placeholder="Email">
+        </div>
+        
+        <button class="btn_pink margin_top" onclick="updateUser()">Save</button>
+        <button class="btn_pink margin_top" onclick="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+    
+    <script src="../js/userManagement.js"></script>
+</body>
+</html>

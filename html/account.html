@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Information</title>
+        <!--Common CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <!--Page Specific CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/account.css">
+        <!--Font Awesome CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+     </head>
+<body>
+        <!------------------ Header ------------------>
+        <div class="headerContainer">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="dashboard.html">
+                        <img src="../images/EbookStore-Logo.png" alt="EbookStore-Logo" />
+                    </a>
+                </div>
+                <!----------  Nav Bar ------------------>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="dashboard.html" class="navItems">Home</a></li>
+                        <li><a href="booksCollection.html" class="navItems">Ebooks</a></li>
+                        <li><a href="dashboard.html" class="navItems">Featured</a></li>
+                        <li><a href="dashboard.html" class="navItems">Reviews</a></li>
+                        <li><a href="account.html" class="navItems">User Profile</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="../images/cart.png" alt="Shoping Cart" width="28px" height="28px" />
+                </a>
+            </div>
+        </div>
+
+  <div class="container_login">
+
+    <div class="container_info card">
+        <img class="logo_book" src="../images/logonew.jpg" alt="Online_eBook_Store" />
+        <p class="title_primary margin_top">Welcome to Profile Information</p>
+        <!-- <p class="title_secondary margin_top">Please change if you eant to change </p> -->
+    </div>
+
+        <div class="container_credentials card padding_2">
+        <form>
+            <h4 class="title_secondary">Profile Information</h4>
+            <div class="container_edittext margin_top">
+                <i class="icon_edittext fas fa-user"></i>
+                <input class="edittext" type="text" id="USERNAME" maxlength="22" placeholder="Full Name" readonly>
+                <i id="BTN_EDIT_USERNAME" class="icon_edit fas fa-pencil" aria-hidden="true"></i>
+                <p id="VALIDATION_USERNAME" class="error"></p>
+            </div>
+            <div class="container_edittext margin_top">
+                <i class="icon_edittext fas fa-envelope"></i>
+                <input class="edittext" type="email" id="EMAIL" maxlength="32" placeholder="Email">
+                <p id="VALIDATION_EMAIL" class="error"></p>
+            </div>
+            <div class="container_edittext margin_top">
+                <i class="icon_edittext fas fa-lock"></i>
+                <input class="edittext" type="password" id="PASSWORD" maxlength="16" placeholder="Password"
+                readonly>
+                <i id="BTN_EDIT_PASSWORD" class="icon_edit fas fa-pencil" aria-hidden="true"></i>
+                <p id="VALIDATION_PASSWORD" class="error"></p>
+            </div>
+            <div class="divider margin_top"></div>
+            <div>
+                <button id="BTN_APPLYDETAILS" class="btn_pink margin_top" type="submit">Apply Details</button>
+            </div>
+            <button id="BTN_BACK_TO_DASHBOARD" class="btn_pink margin_top" type="submit">Back To Dashboard</button>
+        </form>
+    </div>
+</div>
+
+
+
+        <!-- footer section starts  -->
+        <section id="footer" style="padding: 0px;">
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                           <img src="../images/Playstore.png" />
+                           <img src="../images/Applestore.png" />
+                        </div>
+                     </div>
+                     <div class="footer-col-2">
+                        <img src="../images/EbookStore-Logo-footer.png" />
+                        <p>
+                           Discover all the books you are looking for our eBook store has something for everyone. Shop with us today and discover the joy of reading !!
+                        </p>
+                     </div>
+                     <div class="footer-col-3">
+                        <h3>Contact Info</h3>
+                        <ul>
+                           <p> <i class="fas fa-phone" style="font-size: 15px; color: white;"></i> +91 9429279657 </p>
+                           <p> <i class="fas fa-phone" style="font-size: 15px; color: white;"></i> +91 9429279657 </p>
+                           <p> <i class="fas fa-envelope" style="font-size: 15px; color: white;"></i> onlineEbookStore@gmail.com </p>
+                           <p> <i class="fas fa-map-marker-alt" style="font-size: 15px; color: white;"></i> Nadiad, India - 400104
+                           </p>
+                        </ul>
+                     </div>
+                     <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <div class="footer__icons">
+                           <a href="" class="footer__icon btn-instagram">
+                           <i class="fab fa-instagram fa-2x"></i>
+                           </a>
+                           <a href="" class="footer__icon btn-facebook">
+                           <i class="fab fa-facebook-f fa-2x"></i>
+                           </a>
+                           <a href="" class="footer__icon btn-twitter">
+                           <i class="fab fa-twitter fa-2x"></i>
+                           </a>
+                           <a href="" class="footer__icon btn-linkedin">
+                           <i class="fab fa-linkedin-in fa-2x"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <hr />
+                  <p class="copyright">Copyright 2024 - OnlineEbookStore prepare by Nikita & Jagruti</p>
+               </div>
+            </div>
+         </section>
+         <!-- footer section ends -->
+
+         <script src="../js/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- <link rel="stylesheet" href="../css/userManagement.css"> -->
+    <link rel="stylesheet" href="../css/bookManagement.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container_login">
+
+    <div class="container_info">
+        <p class="title_primary">Book Management</p>
+    </div>
+    <div class="abcd">
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-book"></i>
+            <input class="edittext1" type="text" id="BOOKNAME" maxlength="64" placeholder="Book Name" required />
+            <p id="VALIDATION_BOOKNAME" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-user"></i>
+            <input class="edittext1" type="text" id="AUTHORNAME" maxlength="64" placeholder="Author Name" required />
+            <p id="VALIDATION_AUTHORNAME" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-inr"></i>
+            <input class="edittext1" type="text" id="PRICE" maxlength="64" placeholder="Price" required />
+            <p id="VALIDATION_PRICE" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+            <i class="icon_edittext fas fa-indent"></i>
+            <input class="edittext1" type="text" id="DETAILS" placeholder="Details" required />
+            <p id="VALIDATION_DETAILS" class="error"></p>
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-camera"></i>
+          <input class="edittext1" type="text" id="IMAGE" maxlength="64" placeholder="Image File" required />
+          <p id="VALIDATION_DETAILS" class="error"></p>
+      </div>
+        <button id="BTN_ADD_BOOK" class="btn_pink margin_top" type="submit">Add New Book</button>
+    </div>
+
+    <p class="title_secondary">Total Books List</p>
+
+    
+    <div id="bookList"></div>
+
+
+    <div id="editForm" style="display: none;">
+      <div class="abc">
+        <input type="hidden" id="editId">
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-book"></i>
+          <input class="edittext1" type="text" id="editBookName" placeholder="Book Name">
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-user"></i>
+          <input class="edittext1" type="email" id="editAuthorName" placeholder="Author Name">
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-inr"></i>
+          <input class="edittext1" type="email" id="editPrice" placeholder="Price">
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-indent"></i>
+          <input class="edittext1" type="email" id="editDescription" placeholder="Description">
+        </div>
+        <div class="container_edittext margin_top">
+          <i class="icon_edittext fas fa-camera"></i>
+          <input class="edittext1" type="email" id="editBookImage" placeholder="Book Image">
+        </div>
+        
+        <button class="btn_pink margin_top" onclick="updateUser()">Save</button>
+        <button class="btn_pink margin_top" onclick="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+    
+    <script src="../js/bookManagement.js"></script>
+</body>
+</html>
