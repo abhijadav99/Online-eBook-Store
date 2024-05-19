@@ -1,1 +1,7 @@
+For database setup steps
 
+1. Download eBook.zip folder and extract it.
+2. Copy all files and paste in path - C:\xampp\mysql\data
+3. Now you will finally find ebook folder in above path 
+
+Still it is not working then manually create table and columns
